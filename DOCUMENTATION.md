@@ -5,7 +5,7 @@
 
 2) Set up environment, explored potential dependencies, imported them and ran Postman test.
 
-3) Enhance the backend by scripting components I deemed necessary to meet the objectives (Endpoint, Display and Fetch meds, Table, Stats, Data Manipulation & Validation Methods) 
+3) Enhance the backend by scripting components I deemed necessary to meet the objectives (Endpoint, Display and Fetch meds, Table, Stats, Data Manipulation & Validation Method)
  
 4) Moved to the frontend, and designed the interface with HTML, and CSS (Added Tables, and a Form with validation as the user-friendly solution)
 
