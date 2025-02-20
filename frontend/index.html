@@ -14,7 +14,57 @@
         <h1>Medicine Tracker</h1>
     </header>
     <main>
+        <div class="form-container">
+            <h2>Add New Medicine</h2>
+            <form id="addMedicineForm">
+                <div class="form-group">
+                    <label for="medicineName">Medicine Name</label>
+                    <input type="text" id="medicineName" name="name" required>
+                    <div class="error" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="medicinePrice">Price</label>
+                    <input type="number" id="medicinePrice" name="price" step="0.01" min="0" required>
+                    <div class="error" id="priceError"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Medicine</button>
+            </form>
+        </div>
 
+        <table class="medicine-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="medicineTableBody">
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+
+        <div class="statistics">
+            <h2>Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="value" id="totalMedicines">0</div>
+                    <div class="label">Total Medicines</div>
+                </div>
+                <div class="stat-card">
+                    <div class="value" id="averagePrice">$0.00</div>
+                    <div class="label">Average Price</div>
+                </div>
+                <div class="stat-card">
+                    <div class="value" id="highestPrice">$0.00</div>
+                    <div class="label">Highest Price</div>
+                </div>
+                <div class="stat-card">
+                    <div class="value" id="lowestPrice">$0.00</div>
+                    <div class="label">Lowest Price</div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
